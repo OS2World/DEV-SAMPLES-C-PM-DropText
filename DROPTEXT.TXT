@@ -1,0 +1,18 @@
+                   Drop Text on a Window
+
+Using this program you can type a line of text, drag it over a window and
+drop it thus changing its text.
+
+The window can be an Entry Field, Title Bar, Push Button or any other
+window type which has a textual component.
+
+I wrote this program to test a window procedure which I use to subclass
+an entry field so as to accept only numeric data. I wanted to "cover all
+the bases" and thus needed a way to "zap" the text in the entry field
+from an external program  ... hence DropText.
+
+The source is provided with the package (DROPTSRC ZIP).
+
+  Joe DiAdamo
+
+

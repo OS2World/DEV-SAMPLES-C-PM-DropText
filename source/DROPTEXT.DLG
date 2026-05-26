@@ -1,0 +1,16 @@
+DLGTEMPLATE IDDLG_DROPTEXT LOADONCALL MOVEABLE DISCARDABLE
+ {
+  DIALOG  "Drop Text on a Window", IDDLG_DROPTEXT, 50, 70, 315, 65,
+          WS_VISIBLE | NOT WS_SAVEBITS, FCF_SYSMENU | FCF_TITLEBAR |
+          FCF_MINBUTTON
+   {
+    LTEXT       "Type the text to be dragged in the Entry Field below.",
+                -1, 7, 48, 300, 8
+    LTEXT       "Drag it over the window who's text is to be changed and "
+                "drop it.", -1, 7, 38, 300, 8
+    LTEXT       "Press ""Esc"" before releasing the mouse button to cancel.",
+                -1, 7, 28, 300, 8
+    ENTRYFIELD  "", IDEF_DROPTEXT, 10, 10, 290, 8, ES_MARGIN
+   }
+}
+

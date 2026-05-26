@@ -1,0 +1,9 @@
+#include <os2.h>
+#include "droptext.h"
+
+ICON    IDICN_DROPTEXT   PRELOAD droptext.ico
+POINTER IDPTR_DROPTEXT   PRELOAD droptext.ptr
+POINTER IDPTR_NODROP     PRELOAD nodrop.ptr
+
+rcinclude droptext.dlg
+

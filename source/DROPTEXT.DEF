@@ -1,0 +1,12 @@
+;
+; DEF file for DropText
+;
+
+NAME DROPTEXT WINDOWAPI
+
+DESCRIPTION 'Drop text on another EntryField'
+
+CODE PRELOAD EXECUTEREAD
+HEAPSIZE 28000
+STACKSIZE 64536
+
