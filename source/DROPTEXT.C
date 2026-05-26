@@ -1,6 +1,8 @@
 /*-------------------------------------------------------------------------* 
  *                                                                         * 
+ * Release 1.01 (2025-05-25) . Martin Iturbide                             * 
  * Release 1.0 (May 7, 1993).  Copyright IBM Corp. 1993                    *
+ *                                                                         * 
  *                                                                         * 
  * DropText:  Allow the user to type some text and then drag and drop it   *
  *            onto another window.  If the window has a textual component, *
@@ -175,9 +177,9 @@ MRESULT wpDlg(HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2)
           WinQueryWindowText( WinWindowFromID( hwnd,   /* Get text from EF */
                                                IDEF_DROPTEXT),                          
                               sizeof( szDropText ),                                     
-                              szDropText );                                             
+                              (PCH) szDropText );                                             
           WinSetWindowText( hwndTarget,     /* Drop it!                    */
-                            szDropText );                                               
+                            (PCSZ) szDropText );                                               
          }                                                                              
         else                               /* Can't drop on our own window */
           WinAlarm( HWND_DESKTOP,                                                       
@@ -282,4 +284,3 @@ MRESULT wpEF(HWND hwnd, ULONG msg, MPARAM mp1, MPARAM mp2)
 
  return mr;
 }
-

@@ -6,4 +6,3 @@ POINTER IDPTR_DROPTEXT   PRELOAD droptext.ptr
 POINTER IDPTR_NODROP     PRELOAD nodrop.ptr
 
 rcinclude droptext.dlg
-

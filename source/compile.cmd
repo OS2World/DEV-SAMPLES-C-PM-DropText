@@ -1,0 +1,5 @@
+SET C_INCLUDE_PATH=c:/usr/include;%C_INCLUDE_PATH%
+SET INCLUDE=C:\usr\include
+SET EMXOMFLD_TYPE=WLINK
+SET EMXOMFLD_LINKER=wl.exe
+make 2>&1 |tee make.out
