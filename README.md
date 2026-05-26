@@ -3,5 +3,16 @@ Using this program you can type a line of text, drag it over a window and drop i
 
 The window can be an Entry Field, Title Bar, Push Button or any other window type which has a textual component.
 
-## Author
-Joe DiAdamo 
+![DROPTEXT ScreenShot](/wiki/DROPTEXT_001.png)
+
+## LICENSE
+* BSD 3-Clause License
+
+## COMPILE TOOLS
+* yum install git gcc make libc-devel binutils watcom-wrc watcom-wlink-hll
+ 
+## AUTHORS
+* Martin Iturbide (2026)
+* Joe DiAdamo, IBM
+
+## LINKS
